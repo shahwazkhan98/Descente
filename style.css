@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Rajdhani:wght@400;600&family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    /* border: 1px solid red; */
+}
+nav{
+    height: 15vh;
+    width: 100%;
+    padding: 50px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav h1{
+    font-size: 30px;
+    cursor: pointer;
+}
+nav h1:hover{
+    border-bottom: 1px solid red;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+}
+nav li{
+    
+    font-weight: 500;
+    /* padding-left: 50px; */
+    margin-left: 50px;
+}
+nav li:hover{
+    cursor: pointer;
+    border-bottom: 1px solid black ;
+}
+.btn-section .degree{
+    padding: 15px 25px;
+    font-weight: 600;
+}
+.btn-section button:hover{
+    cursor: pointer;
+    /* color: rgb(92, 61, 61); */
+    background-color: rgb(219, 158, 158);
+}
+.btn-section .start{
+    padding: 15px 20px;
+    font-weight: 600;
+    
+}
+.btn-section button{
+    border-radius: 25px;
+}
+
+
+.main{
+    height: 85vh;
+    width: 100%;
+    padding:50px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+}
+.main .img-section1{
+    height: 450px;
+    width: 45%;
+}
+.main .img-section2{
+    height: 450px;
+    width: 45%;
+}
+.main img{
+    height: 100%;
+    width: 100%;
+}
+
+
+.main2{
+    height: 50vh;
+    /* background-color: blue; */
+    padding: 50px;
+    display: flex;
+    align-items: center;
+}
+.main2 .text-section2{
+    background-color: #fff;
+    height: 250px;
+    border: 1px solid black;
+    border-radius:15px;
+    width: 60%;
+    padding: 20px;
+}
+.main2 .text-section1{
+    /* background-color: rgb(100, 233, 83); */
+    height: 250px;
+    width: 40%;
+    padding: 20px;
+    border-radius:15px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.main2 .text-section2{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+@media(max-width:996px){
+    nav {
+        padding: 10px;
+    }
+    
+   nav ul{
+        display: none;
+    }
+    
+}
+
+@media(max-width:768px){
+
+    nav .degree{
+        display: none;
+    }
+    .main{
+        height: 100%;
+        padding: 10px;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .main .img-section1{
+        width: 100%;
+    }
+    .main .img-section2{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+}
